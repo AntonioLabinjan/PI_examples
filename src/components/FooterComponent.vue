@@ -6,7 +6,8 @@
   </template>
   
   <script>
-  export default {
+  export default { 
+    // po ovom imenu se dohvaća komponenta u dr. djelovima koda
     name: "FooterComponent",
   };
   </script>
