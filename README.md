@@ -1,3 +1,3 @@
 super simple todo list
 
-to be continued....
+Options API (starija varijanta..sliči VUE2)
