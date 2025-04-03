@@ -56,10 +56,23 @@
       </ul>
     </div>
   </div>
+  <div>
+    <!-- dohvat komponente i njen prikaz-->
+  <FooterComponent></FooterComponent>
+  </div>
 </template>
 
 <script>
+// import komponente => . označava src folder
+import FooterComponent from "./components/FooterComponent.vue";
+
 export default {
+  // komponente koje imamo na stranici => zamislimo komponente kao manje sastavne djelove od kojih se slaže cijela stranica (view)
+  // view se može sastojati od više komponenti
+  components:{
+    FooterComponent, // mora se podudarat s Name parametrom u komponenti
+  },
+
   // podaci
   data() {
     return {
@@ -93,6 +106,7 @@ export default {
       this.tasks.splice(index, 1);
     }
   },
+  // vidi alert za skužit čemu služi mounted
   mounted() {
     alert("Mounted radi nešto čim se stvar pokrene...also, kad refreshamo stranicu, sve će se zbrisat jer nemamo pohranu");
   }
